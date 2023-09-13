@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing</title>
+</head>
+<body>
+    <h1>Number Gusser</h1>
+    <h4 class="number-guesser">Guesser a number between 1 and 9</h4>
+    <input class="input" type="number" placeholder="Enter your guess">
+    <button class="button">Guess</button>
+    <div class="result"></div>
+    <style>
+        body{
+            text-align: center;
+            font-family: sans-serif;
+        }
+        h1{
+            background: #0021d9;
+            margin: auto;
+            width: fit-content;
+            padding: 10px 120px;
+            border-radius: 30px;
+            color: #fff;
+        }
+        h4{
+            border-bottom: 2px solid #0021d9;
+            width: fit-content;
+            margin: 30px auto;
+            padding-bottom: 5px;
+        }
+        .input{
+            border: 2px solid #0021d9;
+            outline: none;
+            padding: 6px 26px;
+            border-radius: 23px 0 0px 23px;
+            border-right: none;
+            cursor: pointer;
+        }
+        .button{
+            border: 2px solid #0021d9;
+            border-radius: 0 23px 23px 0;
+            padding: 6px 26px;
+            margin-left: -17px;
+            border-left: none;
+            background: transparent;
+            cursor: pointer;
+            transition: 0.4s;
+            font-weight: 600;
+        }
+        .button:hover{
+            background-color: #0021d942;
+            color: #0021d9;
+        }
+        .text{
+            background: #0021d9;
+            font-size: 1.6em;
+            width: fit-content;
+            margin: 16px auto;
+            padding: 10px 30px;
+            border-radius: 23px;
+            color: #fff;
+            font-weight: 600;
+        }
+        .computer{
+            background: green;
+            font-size: 1.6em;
+            width: fit-content;
+            margin: 16px auto;
+            padding: 10px 30px;
+            border-radius: 23px;
+            color: #fff;
+        }
+        .guess{
+            background: red;
+            font-size: 1.6em;
+            width: fit-content;
+            margin: 16px auto;
+            padding: 10px 30px;
+            border-radius: 23px;
+            color: #fff;
+        }
+
+    </style>
+    <script src="number.js"></script>
+</body>
+</html>
